@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HBD Desti</title>
+</head>
+<style>
+    body {
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .star {
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background-color: #fff;
+        animation: star-fall 2s linear infinite;
+    }
+
+    @keyframes star-fall {
+        0% {
+            transform: translateY(-10vh);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(110vh);
+            opacity: 0;
+        }
+    }
+
+    .typing-text {
+        color: #fff;
+        font-size: 18px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #fff;
+        animation: typing 5s steps(30) ;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+
+    .lyrics {
+        color: #fff;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+</style>
+<p>
+    <script>
+        function createStar () {
+            const star = document.createElement ("div");
+            star.classList.add ("star");
+            star.style.left = Math.random () * 100 + "vw";
+            document.body.appendChild (star);
+            setTimeout (() => {
+                star.remove ();
+            }, 2000);
+        }
+
+        setInterval (createStar, 100);
+    </script>
+
+    <audio src="sicmu/JVKE - golden hour (instrumental) (128  kbps).mp3" controls autoplay loop></audio>
+
+    <p class="typing-text">Selamat ulang tahun, Desti yang cantik dan ceria! Semoga di usia yang semakin dewasa ini, kamu semakin bijak, berani, dan bahagia.</p>
+    <p class="typing-text">Kamu adalah wanita yang luar biasa, yang memiliki banyak potensi dan mimpi.</p>
+    <p class="typing-text">Jangan pernah menyerah pada apa yang kamu inginkan, karena kamu pantas mendapatkannya. Kamu adalah inspirasi bagi banyak orang, termasuk aku.</p>
+    <p class="typing-text">Terima kasih sudah menjadi teman yang baik, yang selalu ada di saat suka dan duka.</p>
+    <p class="typing-text">Semoga di tahun ini, kamu mendapatkan banyak keberkahan, kesempatan, dan kejutan.</p>
+    <p class="typing-text">Kamu adalah bintang yang bersinar terang, yang menerangi dunia dengan cahaya indahmu.</p>
+    <p class="typing-text">Selamat ulang tahun, Desti. Aku sayang kamu. 💖</p>
+</body>
+</html>
